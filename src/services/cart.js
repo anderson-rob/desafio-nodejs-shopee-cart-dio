@@ -23,19 +23,8 @@ async function deleteItem(userCart, name) {
     userCart.splice(index, 1);
   }
 }
-/*
+
 // remover um item - diminuir um item
-async function removeItem(userCart, index) {
-  // transforma o indice visual do usuario, para o indice do backend
-  const deleteIndex = index - 1; 
-
-  // é maior que zero e se é menor do que o tamanho do carrinho
-  if(index >= 0 && index < userCart.length){
-    userCart.splice(deleteIndex, 1);
-  }
-}
-*/
-
 async function  removeItem(userCart, item) {
 
   // 1. encontrar o indice do item, 2 itens, posição 0 e 1
